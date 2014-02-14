@@ -17,7 +17,7 @@ body{
 /* navbar */
 #navbar{
 	border-radius: 0;
-	background: url('../images/nav-bg.jpg') repeat;
+	/*background: url('../images/nav-bg.jpg') repeat;*/
 }
 
 #navbar a{
