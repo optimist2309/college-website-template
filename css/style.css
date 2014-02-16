@@ -17,15 +17,21 @@ body{
 /* navbar */
 #navbar{
 	border-radius: 0;
-	/*background: url('../images/nav-bg.jpg') repeat;*/
+	background: #33383e;
+	border-color: #2C3035
 }
 
 #navbar a{
 	text-transform: uppercase;
+	text-shadow:0 0 1px #F1F1F1;
 }
 
-#navbar .nav li a{
-	font-weight: bold;
+#navbar .nav > li > a{
+	color:#FFF;
+}
+
+#navbar .navbar-brand img{
+	height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -46,10 +52,39 @@ body{
 	}
 
 	.navbar-brand,.navbar-nav > li > a {
-    line-height: 74px;
-    height: 74px;
-    padding-top: 0;
-}
+		line-height: 74px;
+		height: 74px;
+		padding-top: 0;
+	}
+	
+	#main-nav > ul > li > a{
+		border-right: 1px solid #2C3035;
+		font-size: 18px;
+	}
+
+	#main-nav > ul > li:first-child a{
+		border-left: 1px solid #2C3035;
+	}
+	
+	#main-nav > ul > li >a:hover{
+		background: #428bca ;
+	}
+
+	#main-nav .active a{
+		background-color:#24282D;
+	}
+
+	#navbar .dropdown-menu>li>a:hover, #navbar .dropdown-menu>li>a:focus{
+		background: #428bca;
+		color:#FFF;
+	}
+
+	#navbar .dropdown-menu>li>a{
+		text-transform: none;
+		padding: 10px 20px;
+		color:#2C3035;
+		font-size: 16px;
+	}
 }
 
 /* END navbar*/
