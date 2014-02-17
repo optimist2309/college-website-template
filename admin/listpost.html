@@ -9,8 +9,6 @@
     <!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
     <!-- GRAPHIC THEME -->
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-    <script type='text/javascript' src="../menu_jquery.js"></script>
     <script type="text/javascript" src="../Scripts/jquery.js"></script>
     <script type="text/javascript" src="../Scripts/toggle.js"></script>
     <script type="text/javascript">
@@ -18,7 +16,7 @@
             $(".tabs > ul").tabs();
         });
     </script>
-    <title>Dashboard</title>
+    <title>List Post</title>
 </head>
 
 <body>
@@ -34,7 +32,7 @@
 
             </p>
 
-            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Đăng Xuất</a></strong></p>
+            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Log Out</a></strong></p>
 
         </div>
         <!--  /tray -->
@@ -47,28 +45,50 @@
             <ul class="box f-right">
                 <li><a href="../#" target="_blank"><span><strong>Home &raquo;</strong></span></a></li>
             </ul>
-                   <li class='active'><a href='#'><span>Dashboard</span></a></li>
-                   <li class='has-sub'><a href='#'><span>Home Setting</span></a>
-                       <ul>
-                           <li class='has-sub'><a href='#'><span>Slider</span></a>
-                           <li class='has-sub'><a href='#'><span>Slider</span></a>
-                       </ul>
-                   </li>
-                   <li class='has-sub'><a href='#'><span>PageManager</span></a>
-                      <ul>
-                         <li class='has-sub'><a href='#'><span>Overview</span></a></li>
-                         <li class='has-sub'><a href='#'><span>Product 2</span></a></li>
-                         <li class='has-sub'><a href='#'><span>Faculities</span></a></li>
-                         <li class='has-sub'><a href='#'><span>Depar..</span></a></li>
-                         <li class='has-sub'><a href='#'><span>Course</span></a></li>
-                         <li class='has-sub'><a href='#'><span>Contact</span></a></li>
-                      </ul>
-                   </li>
-                   <li><a href='#'><span>Addmission</span></a></li>
-                   <li class='last'><a href='#'><span>Feedback</span></a></li>
-                    <li class='last'><a href='#'><span>StudentManager</span></a></li>
-                </ul>
-         </div>
+            <ul class="box f-right">
+                <li><a href="Post.html" target="_blank"><span><strong>Post &raquo;</strong></span></a></li>
+            </ul>
+
+            <ul class="box">
+                <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <!-- Active -->
+                <li><a href="homesetting.html"><span>Home Setting</span></a></li> 
+                <li>
+                    <a href="pagemanager.html"><span>PageManager</span></a> 
+                        <ul>
+                            <li>
+                                <a href="#"><span>Overview</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Faculities</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Overview</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Overview</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Overview</span></a>
+
+                            </li>
+                            <li>
+                                <a href="#"><span>Overview</span></a>
+
+                            </li>
+
+                        </ul>
+                </li> 
+                <li><a href="#"><span>Addmission</span></a></li>
+                <li><a href="#"><span>Feddback</span></a></li>
+                <li><a href="#"><span>Student...</span></a></li>
+            </ul>
+
+        </div>
         <!-- /header -->
 
         <hr class="noscreen" />
@@ -129,17 +149,17 @@
             <!-- Content (Right Column) -->
             <div id="content" class="box">
                 <!-- Tabs -->
-                <h3 class="tit">Student List</h3>
+                <h3 class="tit">List Post</h3>
                 <!-- Table -->
 
                 <!-- Table (TABLE) -->
                 <table>
                     <tr>
-                        <th>Name ID</th>
-                        <th>Full Name</th>
-                        <th>Address</th>
-                        <th>Phone Number</th>
-                        <th>Admission</th>
+                        <th>Code</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Last Time</th>
+                        <th>Category</th>
                         <th>Status</th>
 
                     </tr>
