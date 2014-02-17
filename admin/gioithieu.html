@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
+
+    <!-- GRAPHIC THEME -->
+    <script type="text/javascript" src="../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/toggle.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".tabs > ul").tabs();
+        });
+    </script>
+    <title>Dashboard</title>
+
+    <link href="Content/cleditor/jquery.cleditor.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-1.6.3.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.cleditor.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var options = {
+                width: 400,
+                height: 200,
+                controls: "bold italic underline strikethrough subscript superscript | font size " +
+                        "style | color highlight removeformat | bullets numbering | outdent " +
+                        "indent | alignleft center alignright justify | undo redo | " +
+                        "rule link image unlink | cut copy paste pastetext | print source"
+            };
+
+            var editor = $("#editor").cleditor(options)[0];
+
+            $("#btnClear").click(function (e) {
+                e.preventDefault();
+                editor.focus();
+                editor.clear();
+            });
+
+            $("#btnAddImage").click(function () {
+                editor.execCommand("insertimage", "http://images.free-extras.com/pics/s/smile-1620.JPG", null, null)
+                editor.focus();
+            });
+
+            $("#btnGetHtml").click(function () {
+                alert($("#editor").val());
+            });
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- Tray -->
+        <div id="tray" class="box">
+
+            <p class="f-left box">
+                Site: <strong>Thế Giới Đồ Chơi</strong>
+
+            </p>
+
+            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Đăng Xuất</a></strong></p>
+
+        </div>
+        <!--  /tray -->
+
+        <hr class="noscreen" />
+
+        <!-- Menu -->
+        <div id="menu" class="box">
+
+            <ul class="box f-right">
+                <li><a href="../trangchu.html" target="_blank"><span><strong>Xem trang &raquo;</strong></span></a></li>
+            </ul>
+
+            <ul class="box">
+                <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <!-- Active -->
+                <li><a href="sanpham.html"><span>Sản Phẩm</span></a></li>
+                <li><a href="gioithieu.html"><span>Giới Thiệu</span></a></li>
+                <li><a href="user.html"><span>User</span></a></li>
+            </ul>
+
+        </div>
+        <!-- /header -->
+
+        <hr class="noscreen" />
+
+        <!-- Columns -->
+        <div id="cols" class="box">
+
+            <!-- Aside (Left Column) -->
+            <div id="aside" class="box">
+
+                <div class="padding box">
+
+                    <!-- Logo (Max. width = 200px) -->
+                    <p id="logo">
+                        <a href="dashboard.html">
+                            <img src="../image/Dashboard/logox.gif" alt="Our logo" title="Visit Site" /></a>
+                    </p>
+
+                    <!-- Search -->
+                    <form action="#" method="get" id="search">
+                        <fieldset>
+                            <legend>Tìm Kiếm</legend>
+
+                            <p>
+                                <input type="text" size="17" name="" class="input-text" />&nbsp;<input type="submit" value="OK" class="input-submit-02" /><br />
+                                <a href="javascript:toggle('search-options');" class="ico-drop">Tìm kiếm nâng cao</a>
+                            </p>
+                            <div id="search-options" style="display: none;">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="" checked="checked" />
+                                        Google</label><br />
+                                    <label>
+                                        <input type="checkbox" name="" />
+                                        Site</label><br />
+                                </p>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <!-- Create a new project -->
+
+                </div>
+                <!-- /padding -->
+
+            </div>
+            <!-- /aside -->
+
+            <hr class="noscreen" />
+
+            <!-- Content (Right Column) -->
+            <div id="content" class="box">
+
+                <!-- Nội dung công việc nén hết trong này -->
+
+                <h3 class="tit">Giới thiệu</h3>
+
+                <div style="width:100%">
+                    <div>
+                        <textarea id="editor" rows="0" cols="0" style="width:100%">
+                        <div>
+                                                <h2> GIỚI THIỆU VỀ CHÚNG TÔI </h2>
+                                                <br />
+                                            </div>
+                                            <div class="gioithieu_content" align="left">
+                                                    <span style="font-size: small; font-family: arial,helvetica,sans-serif;">Website Thế Giới Đồ Chơi ra đời năm 2013, thuộc CÔNG TY CỔ PHẦN DỊCH VỤ GIẢI TRÍ G4. Thế Giới Đồ Chơi liên tục phát triển cả về chất lượng dịch vụ lẫn số lượng các trung tâm bán lẻ. <br /><br />
+                                                        </span>
+                                                        <!--<div align="center">-->
+                                                        <img alt="chuỗi cửa hàng" src="../image/Toys_R_Us_sg.JPG" height="200" width="250" /> <br /> <br />
+                                                        <!--</div>-->
+                                                        
+                                                        <span style="font-size: small; font-family: arial,helvetica,sans-serif;">
+                                                        Trải dài 3 miền Bắc - Trung - Nam, Thế Giới Đồ Chơi cung cấp các sản phẩm chất lượng, chính hãng 100%, và là hệ thống trung tâm bán lẻ đầu tiên của Việt Nam được cấp chứng chỉ ISO 9001:2000 về quản lý chất lượng theo tiêu chuẩn Quốc tế. <br /><br />
+                                                            </span>
+                                                        <span style="font-size: small; font-family: arial,helvetica,sans-serif;">
+                                                        Cùng với xu thế phát triển của Thương mại điện tử (TMĐT) Việt Nam, Thế Giới Đồ Chơi cũng phát triển lên một tầm cao mới. Là Website TMĐT chính thức của hệ thống G4 Shop, chúng tôi mang lại cho quý khách hàng những giá trị cộng thêm nhờ sự tiện lợi và chi phí được tiết giảm. Đến với Thế giới Đồ Chơi bạn sẽ được trải nghiệm dịch vụ hoàn hảo của TMĐT đúng nghĩa.<br />
+                                                    </span>
+                                                    <br />
+                                             </div>
+                                             <div> 
+                                                    <span style="font-size: small; font-family: arial,helvetica,sans-serif;">ĐC: Quán Trà Đá Hoa Sữa, Số 1A Yết Kiêu - Quận Hoàn Kiếm - tp Hà Nội</span>
+                                                    <br />
+                                                    <span style="font-size: small; font-family: arial,helvetica,sans-serif;">ĐT: (04) 12 345 678 - (04) 87 654 321<br />
+                                                    </span>
+                                                 <br />
+                                            </div>
+                                            <div>
+                                                <p></p>
+                                                <img alt="google map" src="../image/mapsite.png" height="200" width="250" />
+                                                <p></p>
+                                            </div>
+
+                                            <br />
+                        </textarea>
+                    </div>
+                    <div class="normaldiv" style="float: right">
+                        <a href="#" class="siteButton" id="btnClear">Clear</a>
+                        <a href="#" class="siteButton" id="btnAddImage">Add an image</a>
+                        <a href="#" class="siteButton" id="btnGetHtml">Get html</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /content -->
+
+        </div>
+        <!-- /cols -->
+
+        <hr class="noscreen" />
+
+        <!-- Footer -->
+        <div id="footer" class="box">
+
+            <p class="f-left">&copy; 2012-2013 <a href="#">Thế Giới Đồ Chơi</a>, All Rights Reserved &reg;</p>
+
+            <p class="f-right">Templates by <a href="#">G4</a></p>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /main -->
+</body>
+</html>

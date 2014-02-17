@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
+    <!-- GRAPHIC THEME -->
+    <script type="text/javascript" src="../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/toggle.js"></script>
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $(".tabs > ul").tabs();
+        });
+    </script>-->
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+
+    <div id="main">
+
+        <!-- Tray -->
+        <div id="tray" class="box">
+
+            <p class="f-left box">
+                Site: <strong>Thế Giới Đồ Chơi</strong>
+
+            </p>
+
+            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Đăng Xuất</a></strong></p>
+
+        </div>
+        <!--  /tray -->
+
+        <hr class="noscreen" />
+
+        <!-- Menu -->
+        <div id="menu" class="box">
+
+            <ul class="box f-right">
+                <li><a href="../trangchu.html" target="_blank"><span><strong>Xem trang &raquo;</strong></span></a></li>
+            </ul>
+
+            <ul class="box">
+                <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <!-- Active -->
+                <li><a href="sanpham.html"><span>Sản Phẩm</span></a></li>
+                <li><a href="gioithieu.html"><span>Giới Thiệu</span></a></li>
+                <li><a href="#"><span>User</span></a></li>
+            </ul>
+
+        </div>
+        <!-- /header -->
+
+        <hr class="noscreen" />
+
+        <!-- Columns -->
+        <div id="cols" class="box">
+
+            <!-- Aside (Left Column) -->
+            <div id="aside" class="box">
+
+                <div class="padding box">
+
+                    <!-- Logo (Max. width = 200px) -->
+                    <p id="logo">
+                        <a href="dashboard.html">
+                            <img src="../image/Dashboard/logox.gif" alt="Our logo" title="Visit Site" /></a>
+                    </p>
+
+                    <!-- Search -->
+                    <form action="#" method="get" id="search">
+                        <fieldset>
+                            <legend>Tìm Kiếm</legend>
+
+                            <p>
+                                <input type="text" size="17" name="" class="input-text" />&nbsp;<input type="submit" value="OK" class="input-submit-02" /><br />
+                                <a href="javascript:toggle('search-options');" class="ico-drop">Tìm kiếm nâng cao</a>
+                            </p>
+                            <div id="search-options" style="display: none;">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="" checked="checked" />
+                                        Google</label><br />
+                                    <label>
+                                        <input type="checkbox" name="" />
+                                        Site</label><br />
+                                    <label>
+                                        <input type="checkbox" name=""/>
+                                        Search</label><br />
+                                    <label>
+                                        <input type="checkbox" name="" />                                   
+                                        Cocco</label><br />
+                                </p>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <!-- Create a new project -->
+
+                </div>
+                <!-- /padding -->
+
+            </div>
+            <!-- /aside -->
+
+            <hr class="noscreen" />
+
+            <!-- Content (Right Column) -->
+            <div id="content" class="box">
+
+                <!-- Nội dung công việc nén hết trong này -->
+
+                <h3 class="tit">Sản Phẩm</h3>
+
+                <form action="sanpham.html" method="post" id="formsanpham">
+
+                    <div>
+                    <input type="button" onclick="javascript: toggle('them');" class="ico-drop" value="Thêm sản phẩm" />
+                        </div>
+                    <br />
+                    <div id="them" style="display: none;">
+                        <table style="border: none">
+                            <tr>
+                                <td>Tên</td>
+                                <td>
+                                    <input type="text" value="Product 3" /></td>
+                            </tr>
+                            <tr>
+                                <td>Giá</td>
+                                <td>
+                                    <input type="text" value="99.000" /></td>
+                            </tr>
+                            <tr>
+                                <td>Mô Tả</td>
+                                <td>
+                                    <input type="text" style="width: 200px; height: 150px" value="Nội dung mô tả sản phẩm..." /></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà Cung Cấp</td>
+                                <td>
+                                    <select name="selectncc" id="selectncc" class="combobox" style="width: 154px;">
+                                        <option selected="selected" value="1">- Nhà cung cấp -</option>
+                                        <option value="2">Lego</option>
+                                    </select>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phân Loại</td>
+                                <td>
+                                    <select name="selectpl" id="selectpl" class="combobox" style="width: 154px;">
+                                        <option selected="selected" value="1">- Phân loại -</option>
+                                        <option value="1">0-12 tháng</option>
+                                        <option value="2">2 tuổi</option>
+                                        <option value="3">3-4 tuổi</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>Ảnh</td>
+                                <td>
+                                    <input type="file" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Thêm" onclick='Themsp()' /></td>
+                            </tr>
+                        </table>
+                        <script type="text/javascript">
+                            function Themsp() {
+                                alert('Thêm thành công!');
+                            }
+
+
+                        </script>
+
+                    </div>
+                </form>
+                <br />
+
+                <table width="100%">
+                    <tr>
+                        <th>Ảnh</th>
+                        <th>Tên</th>
+                        <th>Giá</th>
+                        <th>Mô Tả</th>
+                        <th>Nhà Cung Cấp</th>
+                        <th>Phân Loại</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../image/0-12/1.jpg" alt="Product 1" width="80px" height="80px" /></td>
+                        <td>Product 1</td>
+                        <td>89.000</td>
+                        <td>1</td>
+                        <td>Lego</td>
+                        <td>0-12 tháng</td>
+                        <td>
+                            <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
+                            <a href="#" onclick="Xoasp();">
+                                <img src="../image/Dashboard/axoa.png" alt="Sửa" /></a>
+                        </td>
+                    </tr>
+                    <script type="text/javascript">
+                        function Xoasp() {
+                            if (confirm('Bạn có muốn xóa sản phẩm này ko?')) {
+                                alert('Xóa thành công!');
+                            }
+                        }
+                    </script>
+                    <tr>
+                        <td>
+                            <img src="../image/0-12/2.jpg" alt="Product 2" width="80px" height="80px" /></td>
+                        <td>Product 2</td>
+                        <td>99.000</td>
+                        <td>2</td>
+                        <td>Lego</td>
+                        <td>0-12 tháng</td>
+                        <td>
+                            <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
+                            <a href="#" onclick='Xoasp();'>
+                                <img src="../image/Dashboard/axoa.png" alt="Xóa" /></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../image/0-12/3.jpg" alt="Product 3" width="80px" height="80px" /></td>
+                        <td>Product 3</td>
+                        <td>89.000</td>
+                        <td>3</td>
+                        <td>Lego</td>
+                        <td>0-12 tháng</td>
+                        <td>
+                            <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
+                            <a href="#" onclick="Xoasp()">
+                                <img src="../image/Dashboard/axoa.png" alt="Sửa" /></a>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+
+
+
+
+
+            </div>
+            <!-- /content -->
+
+        </div>
+        <!-- /cols -->
+
+        <hr class="noscreen" />
+
+        <!-- Footer -->
+        <div id="footer" class="box">
+
+            <p class="f-left">&copy; 2012-2013 <a href="#">Thế Giới Đồ Chơi</a>, All Rights Reserved &reg;</p>
+
+            <p class="f-right">Templates by <a href="#">G4</a></p>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /main -->
+
+</body>
+</html>
