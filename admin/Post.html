@@ -16,7 +16,7 @@
             $(".tabs > ul").tabs();
         });
     </script>
-    <title>Dashboard</title>
+    <title>Post</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
 
             </p>
 
-            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Đăng Xuất</a></strong></p>
+            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">Log Out</a></strong></p>
 
         </div>
         <!--  /tray -->
@@ -45,7 +45,9 @@
             <ul class="box f-right">
                 <li><a href="../#" target="_blank"><span><strong>Home &raquo;</strong></span></a></li>
             </ul>
-
+            <ul class="box f-right">
+                <li><a href="../#" target="_blank"><span><strong>Back to list post &raquo;</strong></span></a></li>
+            </ul>
             <ul class="box">
                 <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
                 <!-- Active -->
@@ -148,7 +150,103 @@
                 <!-- Tabs -->
                 <h3 class="tit">Consultative forum</h3>
                 <!-- Table -->
+                <div class="from_search">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="lbl_contact">
+                                                                <span id="cbt_title">Title</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left">
+                                                            <input name="ctl09$_Email" type="text" id="ctl09__Email" class="input" style="width: 333px;" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="lbl_contact">
+                                                                <span id="ctl09__lblSubject">Catelogy</span>
+                                                            </div>
+                                                                <select name="status" class="combobox">
+                                                                    <option selected ="selected" value="1">History</option>
+                                                                    <option  value="2">Math</option>
+                                                                    <option  value="3">Litelary</option>
+                                                                    <option  value="4">Gymnastics</option>
+                                                                </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="lbl_contact">
+                                                                <span id="ctl09__lblMessage">Content</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <textarea name="ctl09$_Message" rows="2" cols="20" id="ctl09__Message" class="input" style="height: 100px; width: 333px;"></textarea>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="center">
+                                                            <div class="lbl_contact">
+                                                                <input onclick="CheckSubmit()" type="button" class="button" value=" Post" />
+                                                            </div> 
+                                                        </td>
+                                                    </tr>
+                                                </table>
 
+                                                <a id="ctl09__btnSendMessage" href="javascript:__doPostBack('ctl09$_btnSendMessage','')"></a>
+                                                <noscript>
+                                                    Nasa8x.Web.UI.MessageBox 2008.1.2.0
+                                                </noscript>
+                                                <div id="ctl09_MessageBox">
+                                                </div>
+                                                <br />
+
+                                                <script type="text/javascript">
+
+                                                    var _email = document.getElementById("ctl09__Message");
+                                                    var _message = document.getElementById("ctl09__Message");
+                                                    var _subject = document.getElementById("ctl09__Subject");
+
+                                                    function CheckSubmit() {
+   
+
+                                                        if (_email.value.length == 0) {
+                                                            alert("Please tell us the title content.");
+                                                            _email.focus();
+                                                            return;
+                                                        }
+
+                                                        if (_subject.value.length == 0) {
+                                                            alert("Required to enter the field that you want to select.");
+                                                            _subject.focus();
+                                                            return;
+                                                        }
+
+
+                                                        if (_message.value.length == 0) {
+                                                            alert("Please enter the content.");
+                                                            _message.focus();
+                                                            return;
+                                                        }
+                                                        else {
+                                                            __doPostBack('ctl09$_btnSendMessage', '');
+
+                                                        }
+                                                    }
+                                                </script>
+						<table>
+                                            
+
+                        
+
+                    </tbody>
+
+                </table>
                 <!-- Table (TABLE) -->
                 
 
