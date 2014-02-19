@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
+    <!-- GRAPHIC THEME -->
+    <script type="text/javascript" src="../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/toggle.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".tabs > ul").tabs();
+        });
+    </script>
+    <title>Student Manager</title>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <!-- Tray -->
+        <div id="tray" class="box">
+
+            <p class="f-left box">
+                 <strong>College Website</strong>
+
+            </p>
+
+            <p class="f-right">User: <strong><a href="#">Administrator</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a href="login.html" id="logout">log out</a></strong></p>
+
+        </div>
+        <!--  /tray -->
+
+        <hr class="noscreen" />
+
+        <!-- Menu -->
+        <div id="menu" class="box">
+
+            <ul class="box f-right">
+                <li><a href="../trangchu.html" target="_blank"><span><strong>Home &raquo;</strong></span></a></li>
+            </ul>
+
+            <ul class="box">
+                <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
+                <!-- Active -->>
+                <li><a href="sanpham.html"><span>Home Setting</span></a></li>
+                <li><a href="gioithieu.html"><span>PageManager</span></a></li>
+                <li><a href="user.html"><span>Admission</span></a></li>
+                <li><a href="user.html"><span>Feedback</span></a></li>
+                <li><a href="user.html"><span>StudentManager</span></a></li>
+            </ul>
+
+        </div>
+        <!-- /header -->
+
+        <hr class="noscreen" />
+
+        <!-- Columns -->
+        <div id="cols" class="box">
+
+            <!-- Aside (Left Column) -->
+            <div id="aside" class="box">
+
+                <div class="padding box">
+
+                    <!-- Logo (Max. width = 200px) -->
+                    <p id="logo">
+                        <a href="dashboard.html">
+                            <img src="../image/Dashboard/logo.png" alt="Our logo" title="Visit Site" /></a>
+                    </p>
+
+                    <!-- Search -->
+                    <form action="#" method="get" id="search">
+                        <fieldset>
+                            <legend>Search </legend>
+
+                            <p>
+                                <input type="text" size="17" name="" class="input-text" />&nbsp;<input type="submit" value="OK" class="input-submit-02" /><br />
+                                <a href="javascript:toggle('search-options');" class="ico-drop">Advanced Search</a>
+                            </p>
+                            <div id="search-options" style="display: none;">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="" checked="checked" />
+                                        Google</label><br />
+                                    <label>
+                                        <input type="checkbox" name="" />
+                                        Site</label><br />
+                                </p>
+                            </div>
+
+                        </fieldset>
+                    </form>
+
+                    <!-- Create a new project -->
+
+                </div>
+                <!-- /padding -->
+
+            </div>
+            <!-- /aside -->
+
+            <hr class="noscreen" />
+
+            <!-- Content (Right Column) -->
+            <div id="content" class="box">
+
+                
+                <h3 class="tit">Infomation Student</h3>
+
+                <table cellpadding="0" cellspacing="10" width="100%">
+                            <tbody><tr>
+                                    <td>
+                                        Email <span style="color: Red">*</span>
+                                    </td>
+                                    <td>
+                                        <input name="ctl09$_Email" type="text" id="ctl09__Email" class="input" style="width:222px;">
+                                        <span id="ctl09_RequiredFieldValidator4" style="color:Red;display:none;">*</span>
+                                        <span id="ctl09_RegularExpressionValidator1" style="color:Red;visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mật khẩu <span style="color: Red">*</span>
+                                    </td>
+                                    <td>
+                                        <input name="ctl09$_Password" type="password" id="ctl09__Password" class="input" style="width:222px;">
+                                        <span id="ctl09_RequiredFieldValidator5" style="color:Red;display:none;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Nhập lại <span style="color: Red">*</span>
+                                    </td>
+                                    <td>
+                                        <input name="ctl09$_Password2" type="password" id="ctl09__Password2" class="input" style="width:222px;">
+                                        <span id="ctl09_RequiredFieldValidator6" style="color:Red;display:none;">*</span>
+                                        &nbsp;
+                                        <span id="ctl09_CompareValidator2" style="color:Red;display:none;">Nhập lại mật khẩu sai</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" height="30px" align="center">
+                                        <div style="border-bottom: solid 1px #B3D4F1;">
+                                    </div></td>
+                                </tr>
+                        
+		
+                            <tr>
+                                <td>
+                                    Họ tên
+                                </td>
+                                <td>
+                                    <input name="ctl09$_Fullname" type="text" id="ctl09__Fullname" class="input" style="width:222px;">
+                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Điện thoại
+                                </td>
+                                <td>
+                                    <input name="ctl09$_Tel" type="text" id="ctl09__Tel" class="input" style="width:222px;">
+                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Độ tuổi
+                                </td>
+                                <td>
+                                    <select name="ctl09$_Age" id="ctl09__Age" class="combobox" style="width:224px;">
+			    <option value="&lt;21">Dưới 21 tuổi</option>
+			    <option value="21-28">21 - 28 tuổi</option>
+			    <option value="29-36">29 - 36 tuổi</option>
+			    <option value="37-43">37 - 43 tuổi</option>
+			    <option value="&gt;43">Trên 43 tuổi</option>
+
+		    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tỉnh thành
+                                </td>
+                                <td>
+                                    <select name="ctl09$_Country" id="ctl09__Country" class="combobox" style="width:224px;">
+			    <option value="1" stype="font-weight:bold">Hà Nội</option>
+			    <option value="2" stype="font-weight:bold">TP.HCM</option>
+			    <option value="3" stype="font-weight:bold">Hà Tây</option>
+			    <option value="4" stype="font-weight:bold">Hải Phòng</option>
+			    <option value="5" stype="font-weight:bold">Lạng sơn</option>
+			    <option value="6" stype="font-weight:bold">Đồng tháp</option>
+			    <option value="7" stype="font-weight:bold">Gia Lai</option>
+			    <option value="8" stype="font-weight:bold">Hà Giang</option>
+			    <option value="9" stype="font-weight:bold">Hải Dương</option>
+			    <option value="10" stype="font-weight:bold">Hà Tĩnh</option>
+			    <option value="11" stype="font-weight:bold">Hà Nam</option>
+			    <option value="12" stype="font-weight:bold">Hòa Bình</option>
+			    <option value="13" stype="font-weight:bold">Hưng Yên</option>
+			    <option value="14" stype="font-weight:bold">Khánh Hòa</option>
+			    <option value="15" stype="font-weight:bold">Kiên Giang</option>
+			    <option value="16" stype="font-weight:bold">Kon Tum</option>
+			    <option value="17" stype="font-weight:bold">Lai Châu</option>
+			    <option value="18" stype="font-weight:bold">Đắc Lắc</option>
+			    <option value="19" stype="font-weight:bold">Vĩnh Phúc</option>
+			    <option value="20" stype="font-weight:bold">An Giang</option>
+			    <option value="21" stype="font-weight:bold">Huế</option>
+			    <option value="22" stype="font-weight:bold">Nha Trang</option>
+			    <option value="23" stype="font-weight:bold">Vũng Tàu</option>
+			    <option value="24" stype="font-weight:bold">Cần thơ</option>
+			    <option value="25" stype="font-weight:bold">Đồng Nai</option>
+			    <option value="26" stype="font-weight:bold">Đà Nẵng</option>
+			    <option value="27" stype="font-weight:bold">Buôn Mê Thuột</option>
+			    <option value="28" stype="font-weight:bold">Bạc Liêu</option>
+			    <option value="29" stype="font-weight:bold">Bình Phước</option>
+			    <option value="30" stype="font-weight:bold">Bình Định</option>
+			    <option value="31" stype="font-weight:bold">Bình Dương</option>
+			    <option value="32" stype="font-weight:bold">Bến Tre</option>
+			    <option value="33" stype="font-weight:bold">Bắc Ninh</option>
+			    <option value="34" stype="font-weight:bold">Bắc Giang</option>
+			    <option value="35" stype="font-weight:bold">Bắc Cạn</option>
+			    <option value="36" stype="font-weight:bold">Lâm Đồng</option>
+			    <option value="37" stype="font-weight:bold">Long An</option>
+			    <option value="38" stype="font-weight:bold">Tuyên Quang</option>
+			    <option value="39" stype="font-weight:bold">Vĩnh Long</option>
+			    <option value="40" stype="font-weight:bold">Yên Bái</option>
+			    <option value="41" stype="font-weight:bold">Tiền Giang</option>
+			    <option value="42" stype="font-weight:bold">Thanh Hóa</option>
+			    <option value="43" stype="font-weight:bold">Nam Định</option>
+			    <option value="44" stype="font-weight:bold">Ninh Thuận</option>
+			    <option value="45" stype="font-weight:bold">Phú thọ</option>
+			    <option value="46" stype="font-weight:bold">Quảng Bình</option>
+			    <option value="47" stype="font-weight:bold">Quảng Nam</option>
+			    <option value="48" stype="font-weight:bold">Quảng Ngãi</option>
+			    <option value="49" stype="font-weight:bold">Phú Yên</option>
+			    <option value="50" stype="font-weight:bold">Quảng Ninh</option>
+			    <option value="51" stype="font-weight:bold">Quảng Trị</option>
+			    <option value="52" stype="font-weight:bold">Thái Nguyên</option>
+			    <option value="53" stype="font-weight:bold">Thái Bình</option>
+			    <option value="54" stype="font-weight:bold">Tây Ninh</option>
+			    <option value="55" stype="font-weight:bold">Tây Sơn</option>
+			    <option value="56" stype="font-weight:bold">Sơn La</option>
+			    <option value="57" stype="font-weight:bold">Sóc Trăng</option>
+			    <option value="58" stype="font-weight:bold">Nghệ An</option>
+			    <option value="59" stype="font-weight:bold">Ninh Bình</option>
+			    <option value="60" stype="font-weight:bold">Cao Bằng</option>
+			    <option value="61" stype="font-weight:bold">Ninh Thuận</option>
+
+		    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Địa chỉ
+                                </td>
+                                <td>
+                                    <input name="ctl09$_Address" type="text" id="ctl09__Address" class="input" style="width:222px;">
+                              
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Ghi chú
+                                </td>
+                                <td>
+                                    <textarea name="ctl09$_OtherInfo" rows="2" cols="20" id="ctl09__OtherInfo" class="input" style="height:75px;width:290px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <span id="ctl09__lblRegisterMessage"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <input type="submit" name="ctl09$_btnRegister" value="Đăng ký" onclick="CheckRegister()" class="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
+
+            </div>
+            <!-- /content -->
+
+        </div>
+        <!-- /cols -->
+
+        <hr class="noscreen" />
+
+        <!-- Footer -->
+        <div id="footer" class="box">
+
+            <p class="f-left">&copy; 2013-2014 <a href="#">College Website</a>, All Rights Reserved &reg;</p>
+
+            <p class="f-right">Templates by <a href="#">Vidm_c00618</a></p>
+
+        </div>
+        <!-- /footer -->
+
+    </div>
+    <!-- /main -->
+
+</body>
+</html>
