@@ -1,4 +1,3 @@
-$( document ).ready(function() {
 $('#cssmenu').prepend('<div id="indicatorContainer"><div id="pIndicator"><div id="cIndicator"></div></div></div>');
     var activeElement = $('#cssmenu>ul>li:first');
 
@@ -55,4 +54,3 @@ $('#cssmenu').prepend('<div id="indicatorContainer"><div id="pIndicator"><div id
     			$(this).parent().addClass('open');
     		}
     	});
-});

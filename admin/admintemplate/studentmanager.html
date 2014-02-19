@@ -6,10 +6,12 @@
     <meta http-equiv="content-language" content="en" />
     <meta name="robots" content="noindex,nofollow" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/cssmenu.css" />
     <!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
     <!-- GRAPHIC THEME -->
     <script type="text/javascript" src="../Scripts/jquery.js"></script>
+    <script type='text/javascript' src='../Scripts/menu_jquery.js'></script>
     <script type="text/javascript" src="../Scripts/toggle.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -39,23 +41,31 @@
         <hr class="noscreen" />
 
         <!-- Menu -->
-        <div id="menu" class="box">
-
-            <ul class="box f-right">
-                <li><a href="../trangchu.html" target="_blank"><span><strong>Home &raquo;</strong></span></a></li>
-            </ul>
-
-            <ul class="box">
-                <li id="menu-active"><a href="dashboard.html"><span>Dashboard</span></a></li>
-                <!-- Active -->>
-                <li><a href="#"><span>Home Setting</span></a></li>
-                <li><a href="#"><span>PageManager</span></a></li>
-                <li><a href="#"><span>Admission</span></a></li>
-                <li><a href="feedback.html"><span>Feedback</span></a></li>
-                <li><a href="studentmanager.html"><span>StudentManager</span></a></li>
-            </ul>
-
-        </div>
+        <div id='cssmenu'>
+<ul>
+   <li class='active'><a href='dashboard.html'><span>Dashboard</span></a></li>
+   <li class='has-sub'><a href='#'><span>Home Setting</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Slider</span></a></li>
+	 <li class='has-sub'><a href='#'><span>Navigator</span></a></li> 
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Page Manager</span></a>
+      <ul>
+         <li class='has-sub'><a href='#'><span>Overview</span></a></li>
+	 <li class='has-sub'><a href='#'><span>Faculities</span></a></li> 
+	 <li class='has-sub'><a href='#'><span>Pepar..</span></a></li>
+	 <li class='has-sub'><a href='#'><span>Facilies</span></a></li>
+	 <li class='has-sub'><a href='#'><span>Course</span></a></li>
+	 <li class='has-sub'><a href='#'><span>Contact</span></a></li>
+      </ul>
+   </li>
+   <li><a href='#'><span>Addmission</span></a></li>
+   <li class='last'><a href='feedback.html'><span>Feedback</span></a></li>
+   <li class='last'><a href='studentmanager.html'><span>Student Manager</span></a></li>
+   <li class='last'><a href='post.html'><span>Post</span></a></li>
+</ul>
+</div>
         <!-- /header -->
 
         <hr class="noscreen" />
@@ -134,14 +144,8 @@
                             HDSE
                         </td>
                         <td>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Detail
-                            </label>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Disable
-                            </label>
+                            <a href='#'>Detail</a>
+			    <a href='#'>Disable</a>
                         </td>
                     </tr>
                     <tr>
@@ -155,14 +159,8 @@
                             DISM
                         </td>
                         <td>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Detail
-                            </label>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Disable
-                            </label>
+                            <a href='#'>Detail</a>
+			    <a href='#'>Disable</a>
                         </td>
                     </tr>
                     <tr>
@@ -176,14 +174,8 @@
                             Mobile
                         </td>
                         <td>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Detail
-                            </label>
-                            <label>
-                                <input type="radio" name="checked" />
-                                    Disable
-                            </label>
+                            <a href='#'>Detail</a>
+			    <a href='#'>Disable</a>
                         </td>
                     </tr>
                 </table>
