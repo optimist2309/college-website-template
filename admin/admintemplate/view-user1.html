@@ -7,9 +7,9 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/cssmenu.css" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/search.css" />
     <!-- MAIN STYLE SHEET -->
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" /> 
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/search.css" />
     <!-- GRAPHIC THEME -->
     <script type="text/javascript" src="../Scripts/jquery.js"></script>
     <script type='text/javascript' src='../Scripts/menu_jquery.js'></script>
@@ -19,7 +19,7 @@
             $(".tabs > ul").tabs();
         });
     </script>
-    <title>Student Manager</title>
+    <title>Infomation Student</title>
 </head>
 
 <body>
@@ -120,72 +120,96 @@
 
             <!-- Content (Right Column) -->
             <div id="content" class="box">
-		<h3 class="tit">Student Manager</h3>
-			 <form method="get" action="/search" id="search1" style="float:right">
+
+                
+                <h3 class="tit">Infomation Student</h3>
+			<form method="get" action="/search" id="search1" style="float:right">
   				<input name="q" type="text" size="40" placeholder="Search..." />
-			</form> 
-                <table style="width:100%">
-                    <tr>
-                        <th>UniqueID</th>
-                        <th>Username</th>
-                        <th>Password</th>
-                        <th>FullName</th>
-                        <th>Course</th>
-                        <th>Action</th>
-                        
-                    </tr>
-                    <tr>
-                        <td>C8092</td>
-                        <td>Smith.A@</td>
-                        <td>
-                            123456
-                        </td>
-                        <td>Alan Smith</td>
-                        <td>
-                            HDSE
-                        </td>
-                        <td>
-                            <a href="view-user1.html">
-                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
-			    <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/ico-delete.gif" alt="Disable" /></a>
-			 </td>
-                    </tr>
-                    <tr>
-                        <td>C8092</td>
-                        <td>Smith.A@</td>
-                        <td>
-                            123456
-                        </td>
-                        <td>Alan Smith</td>
-                        <td>
-                            DISM
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
-			    <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/ico-delete.gif" alt="Disable" /></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>C8092</td>
-                        <td>Smith.A@</td>
-                        <td>
-                            123456
-                        </td>
-                        <td>Alan Smith</td>
-                        <td>
-                            Mobile
-                        </td>
-                        <td>
-                            <a href="#">
-                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
-			    <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/ico-delete.gif" alt="Disable" /></a>
-                        </td>
-                    </tr>
-                </table>
+			</form>
+
+                <table cellpadding="0" cellspacing="10" width="100%">
+                            <tbody><tr>
+                                    <td>
+                                        Email Address:
+				      <td>
+                                          <input name="ctl09$_Email" value="Smith@yahoo.com"type="text" id="ctl09__Email" class="input" style="width:222px;">
+                                      </td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        County:
+                                    </td>
+                                    <td>
+                                        <input name="ctl09$_Country" value="American"type="text" id="ctl09__country" class="input" style="width:222px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Course : 
+                                    </td>
+                                    <td>
+                                        <input name="ctl09$_course" value="HDSE"type="text" id="ctl09__course" class="input" style="width:222px;">
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    First access:
+                                </td>
+                                <td>
+                                    <input name="ctl09$_access1" value="20:15am"type="text" id="ctl09_access1" class="input" style="width:222px;">
+                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Last access:
+                                </td>
+                                <td>
+                                    <input name="ctl09$_access2" value="5 minute" type="text" id="ctl09__access2" class="input" style="width:222px;">
+                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Age
+                                </td>
+				<td>
+				  <input name="cra_age"  value="20"type="text" id="crai_age" class="input" style="width;222px;">
+			   </tr>
+                            <tr>
+                                
+                            <tr>
+                                <td>
+                                    Address
+                                </td>
+                                <td>
+                                    <input name="ctl09$_Address" value="199 St.Agre,London,England" type="text" id="ctl09__Address" class="input" style="width:222px;">
+                              
+                                </td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    Note
+                                </td>
+                                <td>
+                                    <textarea name="ctl09$_OtherInfo" rows="2" cols="20" id="ctl09__OtherInfo" class="input" style="height:75px;width:290px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <span id="ctl09__lblRegisterMessage"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td >
+                                    <input  type="submit" name="ctl09$_btnRegister" value="Save" onclick="CheckRegister()" class="button">
+				    <input  type="submit" name="ctl09$_btnRegister" value="Edit" onclick="CheckRegister()" class="button">
+                                </td>
+                            </tr>
+                        </tbody></table>
 
             </div>
             <!-- /content -->

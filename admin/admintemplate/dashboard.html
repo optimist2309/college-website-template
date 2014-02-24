@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/cssmenu.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/search.css" />
     <!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
     <!-- GRAPHIC THEME -->
@@ -65,7 +66,7 @@
    <li><a href='#'><span>Addmission</span></a></li>
    <li class='last'><a href='feedback.html'><span>Feedback</span></a></li>
    <li class='last'><a href='studentmanager.html'><span>Student Manager</span></a></li>
-   <li style="float: right" class='last'><a hfre='#'><span>Home</span></a></li>
+   <li style="float: right" class='last'><a href='#'><span>Home</span></a></li>
    <li class='last'><a href='post.html'><span>Post</span></a></li>
 </ul>
 </div>
@@ -83,7 +84,7 @@
 
                     <!-- Logo (Max. width = 200px) -->
                     <p id="logo">
-                        <a href="dashboard.html">
+                        <a href="#">
                             <img src="../image/Dashboard/logo.png" alt="Our logo" title="Visit Site" /></a>
                     </p>
 
@@ -130,10 +131,14 @@
             <div id="content" class="box">
                 <!-- Tabs -->
                 <h3 class="tit">Student List</h3>
+			<form method="get" action="/search" id="search1" style="float:right">
+  				<input name="q" type="text" size="40" placeholder="Search..." />
+			</form>
+
                 <!-- Table -->
 
                 <!-- Table (TABLE) -->
-                <table>
+                <table style="width: 100%;">
                     <tr>
                         <th>Name ID</th>
                         <th>Full Name</th>

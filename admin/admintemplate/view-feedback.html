@@ -18,17 +18,11 @@
             $(".tabs > ul").tabs();
         });
     </script>
-   <script type="text/javascript">
-        function CheckRegister	() {
-            //Doing something...
-            alert('Successful post!');
-        }
-                </script>
-    <title>Post</title>
+    <title>View Feedback</title>
 </head>
 
 <body>
-   <form name="MainFrm" method="post" action="listpost.html" id="MainFrm">
+
     <div id="main">
 
         <!-- Tray -->
@@ -71,7 +65,7 @@
    <li class='last'><a href='feedback.html'><span>Feedback</span></a></li>
    <li class='last'><a href='studentmanager.html'><span>Student Manager</span></a></li>
    <li class='last'><a href='post.html'><span>Post</span></a></li>
-   <li style="float: right" class='last'><a href='listpost.html'><span>Back to list post</span></a></li>
+   <li style="float: right" class='last'><a href="feedback.html"><span>Back to feedback</span></a></li>
 </ul>
 </div>
         <!-- /header -->
@@ -134,33 +128,41 @@
             <!-- Content (Right Column) -->
             <div id="content" class="box">
                 <!-- Tabs -->
-                <h3 class="tit">Consultative forum</h3>
+                <h3 class="tit">Content feedback</h3>
                 <!-- Table -->
                 <div class="from_search">
                                                 <table>
                                                     <tr>
                                                         <td>
                                                             <div class="lbl_contact">
-                                                                <span id="cbt_title">Title</span>
+                                                                <span id="cbt_title">Full Name</span>
                                                             </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td >
-                                                            <input name="ctl09$_Title" type="text" id="ctl09__Title" class="input" style="width: 333px;" />
+                                                            <input name="ctl09$_Title"  value="Peter Cesh"type="text" id="ctl09__Title" class="input" style="width: 333px;" >
+								
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
                                                             <div class="lbl_contact">
-                                                                <span id="ctl09__lblSubject">Catelogy</span>
+                                                                <span id="ctl09__lblSubject">Course</span>
                                                             </div>
-                                                                <select name="status" class="combobox">
-                                                                    <option selected ="selected" value="1">History</option>
-                                                                    <option  value="2">Math</option>
-                                                                    <option  value="3">Litelary</option>
-                                                                    <option  value="4">Gymnastics</option>
-                                                                </select>
+                                                                <input name="cho_Category" value="HDSE"type="text" id="couo_Category" class="input" style="width:333px;"/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="lbl_contact">
+                                                                <span id="ctl09__lblMessage">Title</span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input name="cho_Category" value="Change classrooms"type="text" id="couo_Category" class="input" style="width:333px;"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -171,15 +173,14 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>
-                                                            <textarea name="ctl09$_Message" rows="2" cols="20" id="ctl09__Message" class="input" style="height: 100px; width: 333px;"></textarea>
+                                                        <td style="overflow:hidden;">
+                                                           <textarea name="ctl09$_Message" rows="2" cols="20" id="ctl09__Message" class="input" style="height: 100px; width: 333px;text-overflow:ellipsis;">Equipment in classrooms too shabby ,not eligible to study</textarea>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center">
                                                             <div class="lbl_contact">
-							      <a href="listpost.html" />
-                                                                <input onclick="CheckRegister()" style="float:left" type="button" class="button" value=" Post" />
+                                                                <input onclick="CheckSubmit()" style="float:left" type="button" class="button" value=" Reply" />
                                                             </div> 
                                                         </td>
                                                     </tr>
@@ -247,6 +248,6 @@
 
     </div>
     <!-- /main -->
-</form>
+
 </body>
 </html>

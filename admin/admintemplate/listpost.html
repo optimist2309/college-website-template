@@ -7,14 +7,18 @@
     <meta name="robots" content="noindex,nofollow" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/main.css" />
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/cssmenu.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/search.css" />
+
     <!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" media="screen,projection" type="text/css" href="../Contents/style.css" />
     <!-- GRAPHIC THEME -->
     <script type="text/javascript" src="../Scripts/jquery.js"></script>
     <script type='text/javascript' src='../Scripts/menu_jquery.js'></script>
     <script type="text/javascript" src="../Scripts/toggle.js"></script>
+    <script type='text/javascript' src='../Scripts/menu_jquery.js'></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+	
+		$(document).ready(function () {
             $(".tabs > ul").tabs();
         });
     </script>
@@ -128,10 +132,13 @@
             <div id="content" class="box">
                 <!-- Tabs -->
                 <h3 class="tit">List Post</h3>
+			<form method="get" action="/search" id="search1" style="float:right">
+  				<input name="q" type="text" size="40" placeholder="Search..." />
+			</form>
                 <!-- Table -->
 
                 <!-- Table (TABLE) -->
-                <table>
+                <table style="width:100%">
                     <tr>
                         <th>Code</th>
                         <th>Title</th>
@@ -142,42 +149,47 @@
 
                     </tr>
                     <tr>
-                        <td><a href="javascript:toggle('dhinfo');">DH001</td>
-                        <td></td>
-                        <td>Phú Xuyên, Hà Nội</td>
+                        <td>DH001</td>
+                        <td>Edit infomation</td>
+                        <td>Alan Smith</td>
                         <td>07.34 AM</td>
-                        <td>20/10/2013 8:02:00 AM</td>
-                        <td>
-                            <a href="#">
-                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
+                        <td>Infomation</td>
+                        <td><a href="view-post1.html">
+                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
+			    <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Edit" /></a>
                             <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/axoa.png" alt="Sửa" /></a>
+                                <img src="../image/Dashboard/axoa.png" alt="Delete" /></a>
                         </td>
                     </tr>
                     <tr class="bg">
-                        <td><a href="#">DH002</td>
-                        <td>Trần Thị B</td>
-                        <td>Lục Ngạn, Bắc Giang</td>
-                        <td>0912345678</td>
-                        <td>21/10/2013 11:29:00 PM</td>
+                        <td>DH002</td>
+                        <td>Password Reset</td>
+                        <td>Bill Gates</td>
+                        <td>09:35 AM</td>
+                        <td>Infomation</td>
                         <td>
                             <a href="#">
-                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
-                            <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/axoa.png" alt="Sửa" /></a>
+                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
+			    <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Edit" /></a>
+                            <a href="#" onclick="Xoasp()">
+                                <img src="../image/Dashboard/axoa.png" alt="Delete" /></a>
                         </td>
                     </tr>
                     <tr class="bg">
-                        <td><a href="#">DH003</td>
-                        <td>Quách Thị C</td>
-                        <td>Phường 5, Cà Mau</td>
-                        <td>0911223344</td>
-                        <td>22/10/2013 5:15:00 PM</td>
+                        <td>DH003</td>
+                        <td>Change Password</td>
+                        <td>Pack Ji Sung</td>
+                        <td>5:10 PM</td>
+                        <td>Edit Account</td>
                         <td>
                             <a href="#">
-                                <img src="../image/Dashboard/asua.png" alt="Sửa" /></a>
-                            <a href="#" onclick="Xoasp();">
-                                <img src="../image/Dashboard/axoa.png" alt="Sửa" /></a>
+                                <img src="../image/Dashboard/atim.png" alt="Viewdetail" /></a>
+			    <a href="#">
+                                <img src="../image/Dashboard/asua.png" alt="Edit" /></a>
+                            <a href="#" onclick="Xoasp()">
+                                <img src="../image/Dashboard/axoa.png" alt="Delete" /></a>
                         </td>
                     </tr>
 

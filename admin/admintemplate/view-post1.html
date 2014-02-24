@@ -18,17 +18,11 @@
             $(".tabs > ul").tabs();
         });
     </script>
-   <script type="text/javascript">
-        function CheckRegister	() {
-            //Doing something...
-            alert('Successful post!');
-        }
-                </script>
     <title>Post</title>
 </head>
 
 <body>
-   <form name="MainFrm" method="post" action="listpost.html" id="MainFrm">
+
     <div id="main">
 
         <!-- Tray -->
@@ -147,7 +141,8 @@
                                                     </tr>
                                                     <tr>
                                                         <td >
-                                                            <input name="ctl09$_Title" type="text" id="ctl09__Title" class="input" style="width: 333px;" />
+                                                            <input name="ctl09$_Title"  value="Edit Infomation"type="text" id="ctl09__Title" class="input" style="width: 333px;" >
+								
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -155,12 +150,7 @@
                                                             <div class="lbl_contact">
                                                                 <span id="ctl09__lblSubject">Catelogy</span>
                                                             </div>
-                                                                <select name="status" class="combobox">
-                                                                    <option selected ="selected" value="1">History</option>
-                                                                    <option  value="2">Math</option>
-                                                                    <option  value="3">Litelary</option>
-                                                                    <option  value="4">Gymnastics</option>
-                                                                </select>
+                                                                <input name="cho_Category" value="Infomation"type="text" id="couo_Category" class="input" style="width:333px;"/>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -172,14 +162,13 @@
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <textarea name="ctl09$_Message" rows="2" cols="20" id="ctl09__Message" class="input" style="height: 100px; width: 333px;"></textarea>
+                                                            <textarea name="ctl09$_Message" rows="2" cols="20" id="ctl09__Message" class="input" style="height: 100px; width: 333px;">A High Court judge rules a biomass incinerator can be built in Greater Manchester despite opposition from the local council and residents.</textarea>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td align="center">
                                                             <div class="lbl_contact">
-							      <a href="listpost.html" />
-                                                                <input onclick="CheckRegister()" style="float:left" type="button" class="button" value=" Post" />
+                                                                <input onclick="CheckSubmit()" style="float:left" type="button" class="button" value=" Save" />
                                                             </div> 
                                                         </td>
                                                     </tr>
@@ -247,6 +236,6 @@
 
     </div>
     <!-- /main -->
-</form>
+
 </body>
 </html>
